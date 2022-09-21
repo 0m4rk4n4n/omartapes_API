@@ -20,8 +20,9 @@ router.put("/unsub/:id",VerifyToken,unsubscribe)
 //like a video 
 router.put("/like/:videoId",VerifyToken,like)
 
+//inc views
 router.put("/viewthis/:id",VerifyToken,viewthis)
 
-router.put("/dislike/:videoId",VerifyToken,unlike)
 //disklike a video
+router.put("/dislike/:videoId",VerifyToken,unlike)
 export default router
