@@ -11,10 +11,10 @@ router.delete("/:id",VerifyToken,deleteuser)
 //get a user 
 router.get("/find/:id", getuser)
 
-//subscribe a user
+//subscribe to a user
 router.put("/sub/:id",VerifyToken,subscribe)
 
-//unsubscribe a user
+//unsubscribe from a user
 router.put("/unsub/:id",VerifyToken,unsubscribe)
 
 //like a video 
